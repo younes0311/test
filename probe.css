@@ -1,0 +1,101 @@
+body{
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box{
+    background-color: rgba(0, 255, 242, 0.527);
+    height: 800px;
+    width: 90%;
+    border-radius: 50px;
+
+}
+#btn{
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+button{
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+#inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    top: 40px;
+    height: 600px;
+}
+input{
+    width: 400px;
+    margin-bottom: 20px;
+    height: 30px;
+    transition: 0.3s;
+    border-radius: 10px;
+
+}
+input:focus{transform: scale(1.1);
+}
+
+button:hover{
+    background-color: aquamarine;
+    color: black;
+    transform: scale(1.1);
+}
+#btn{
+    position: relative;
+    top: 30px;
+}
+
+#thanks{
+    background-color: rgb(7, 253, 68);
+    height: 800px;
+    width: 40%;
+    border-radius: 50px;
+    display: none;
+    justify-content: center;
+    text-align: center;
+
+    
+}
+#thanks div img{
+    height: 200px;
+transition: 0.5s;
+
+}
+
+
+
+@media(max-width:1120px){
+    input{width:400px;}
+}
+@media(max-width:830px){
+    input{width:400px;}
+}
+@media(max-width:540px){
+    input{width:300px;}
+}
+
+@media(max-width:1222px){
+    #thanks div img{height: 100px;
+        
+    }#thanks div h1{font-size: 20px;}
+}
+@media(max-width:780px){
+    #thanks div img{height: 80px;
+        
+    }#thanks div h1{font-size: 15px;}
+}
